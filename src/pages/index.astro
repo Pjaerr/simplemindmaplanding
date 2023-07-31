@@ -14,12 +14,23 @@
     <title>Simple Mindmap</title>
 
     <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
       body {
         width: 100%;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+
+      .coming-soon-text {
+        background: -webkit-linear-gradient(#4834d4, #e056fd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     </style>
   </head>
@@ -27,7 +38,7 @@
     <!-- TODO: Banner to add some colour -->
 
     <div class="relative flex flex-col gap-4">
-      <div class="absolute top-0 -right-8 text-xs">*Coming Soon</div>
+      <div class="text-center text-xs coming-soon-text">Coming Soon</div>
       <div class="flex flex-col gap-4">
         <h1 class="text-center text-4xl">Simple Mindmap</h1>
         <p>Create simple mindmaps at the speed of thought.</p>
